@@ -25,6 +25,19 @@
     --wf-blue-850: hsl(216, 50%, 16%);
     --wf-blue-900: hsl(216, 50%, 11%);
 
+    --wf-gray-core: #adb5bd;
+    --wf-gray-100: hsl(210, 17%, 98%);
+    --wf-gray-150: hsl(210, 17%, 93%);
+    --wf-gray-200: hsl(210, 17%, 88%);
+    --wf-gray-300: hsl(210, 17%, 78%);
+    --wf-gray-400: hsl(210, 17%, 68%);
+    --wf-gray-500: hsl(210, 17%, 58%);
+    --wf-gray-600: hsl(210, 17%, 48%);
+    --wf-gray-700: hsl(210, 17%, 38%);
+    --wf-gray-800: hsl(210, 17%, 28%);
+    --wf-gray-850: hsl(210, 17%, 23%);
+    --wf-gray-900: hsl(210, 17%, 18%);
+
     --wf-light-color: #deeefb;
     --wf-dark-color: #212121;
 }
@@ -54,16 +67,38 @@ footer {
     --bs-btn-border-color: var(--wf-theme-600);
     --bs-btn-hover-bg: var(--wf-theme-700);
     --bs-btn-hover-border-color: var(--wf-theme-700);
+    
+}
+
+.borderEvil {
+    border-color: #82000d;
+}
+
+#EvilolivE {
+    color: #82000d;
+}
+
+.buttN {
+    color: #82000d;
+    background-color: #b0cb1b;
+    border-color: #212121;
+    --bs-btn-hover-bg: #82000d;
+    --bs-btn-hover-border-color: #b0cb1b;
+    --bs-btn-hover-color: var(--wf-light-color);
+}
+
+.textOly {
+    color:#b0cb1b
 }
 
 body {
-    background-color: var(--wf-theme-100);
-    color: var(--wf-dark-color);
+    background-color: var(--wf-gray-150);
+    color: black;
 }
 
 .navbar,
 .footer {
-    background-color: var(--wf-theme-900);
+    background-color: #737373;
 }
 
 .footer {
@@ -73,12 +108,12 @@ body {
 .socialicons {
     font-size: 2rem;
     padding-left: .5rem;
-    color: var(--wf-theme-300);
+    color: #b0cb1b;
     transition: color 0.2s;
 }
 
 .socialicons:hover {
-    color: var(--wf-theme-core);
+    color: #82000d;
 }
 
 .app-logo {
@@ -86,7 +121,7 @@ body {
 }
 
 .checklist i {
-    color: var(--wf-theme-core);
+    color: #82000d;
     padding-right: .5rem;
 }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>App Name: A Coding Challenge</title>
+    <title>EvilolivE: A Coding Challenge</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <!--Tab Favicon  -->
-    <link rel="shortcut icon" href="img/Willicons/logoBlu.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Willicons/logo oly.png" type="image/x-icon" />
 
     <!-- Custom fontawesome css -->
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
@@ -28,69 +28,109 @@
 
 <body>
     <header>
-           <nav class="navbar navbar-expand-lg navbar-dark">
-               <div class="container-fluid">
-                   <a class="navbar-brand" href="/index.html">
-                    <img src="/img/Willicons/logoBlu.png" height="42" alt="developer logo" />
-                    App Name
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="EvilolivE" href="/index.html">
+                    <img src="/img/Willicons/logo oly.png" height="42" alt="developer logo" />
+                    EvilolivE
                 </a>
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                       aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                           <li class="nav-item">
-                               <a class="nav-link" href="/index.html">Home</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="/code.html">The Code</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" target="_blank" href="https://github.com/Fjeldhammer">The Repo</a>
-                           </li>
-                           <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/code.html">The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://github.com/Fjeldhammer/a.EvilolivE">The Repo</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" target="_blank" href="https://fjeldhammer.netlify.app/">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="#">Blog</a>
-                            </li>
-                       </ul>
-                   </div>
-               </div>
-           </nav>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container py-3">
-        <h1>APP UI GOES HERE</h1>
-
-        <input class="form-control" 
-            id="message" 
-            placeholder="Enter a message" 
-            type="text" />
-
-        <button class="btn btn-primary my-3" id="btnSubmit" type="button">
-            Display Message
-        </button>
+        <div class="row row-cols-1 row-cols-md-2 gy-2 borderEvil">
+            <div class="col border-end border-start border-2 borderEvil ">
+                <h1 class="display-5">EvilolivE</h1>
+                <p class="lead">
+                    A <strong>Palindrome</strong> is a word or phrase that appears the same 
+                        forward and backward. 
+                </p>
+                <p class="lead">
+                        <strong>EvilolivE</strong> is a program that checks to see if the word 
+                        or phrase entered is a palindrome.
+                </p>
+                <h2 class="mt-5 border-bottom border-2 borderEvil display-6">Instructions</h2>
+                <p class="lead">
+                    Enter some text in the input box, then press the button to check if your entry is a palindrome.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="mt-5 border-bottom border-2 borderEvil ">Enter a phrase or word to check</h4>
+                <form action="#" class="row g-3">
+                    <div class="col-12">
+                        <input class="form-control"
+                            placeholder="Enter a String"
+                            aria-label="Enter a String"
+                            name="userString"
+                            id="userString"
+                            type="text"
+                        />
+                    </div>
+                    <div class="col-12 text-end">
+                        <button class="btn buttN btn-lg" type="button" id="btnSubmit">
+                            PALINDROME ?
+                        </button>
+                    </div>
+                </form>
+                <div class="alert alert-success mt-4 fade show invisible" role="alert" id="alertYes">
+                    <h4>Well done!</h4>
+                    <hr />
+                    Your reversed entry <span class="fw-bold" id="resultsY"></span>: is a <strong>PALINDROME!</strong>
+                </div>
+                <div class="alert alert-danger mt-4 fade show invisible" role="alert" id="alertNo">
+                    <h4>Oh Dear!</h4>
+                    <hr />
+                    Your reversed entry <span class="fw-bold" id="resultsN"></span>: is <strong>NOT</strong> a palindrome. 
+                       You can try again . . . . or maybe you should try clicking <a class="primary" target="_blank" href="https://fjeldhammer-fizzbuzz.netlify.app/">here</a> instead.
+                </div>
+                
+            </div>
+        </div>
     </main>
 
     <footer class="footer container-fluid py-3">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3 align-items-center gy-2">
-                <div class="col text-center text-lg-start">
+                <div class="col text-center text-lg-start textOly">
                     &copy; 2023 William Field
                 </div>
                 <div class="col text-center">
-                    <img src="/img/Willicons/CirBluTextLong dark.png" height="35" />
+                    <img src="/img/Willicons/CirOlyTextLong dark.png" height="35" />
                 </div>
                 <div class="col text-center text-lg-end">
                     <a href="#"><i class="socialicons bi bi-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/Fjeldhammer"><i class="socialicons bi bi-github"></i></a>
-                    <a target="_blank" href="https://twitter.com/FjeldHammer"><i class="socialicons bi bi-twitter"></i></a>
+                    <a target="_blank" href="https://github.com/Fjeldhammer/a.EvilolivE"><i
+                            class="socialicons bi bi-github"></i></a>
+                    <a target="_blank" href="https://twitter.com/FjeldHammer"><i
+                            class="socialicons bi bi-twitter"></i></a>
                     <a href="mailto:thefjeld@gmail.com.com"><i class=" socialicons bi bi-envelope-at-fill"></i></a>
                 </div>
             </div>
@@ -101,14 +141,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        
+
     <!-- Sweet Alerts -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="/js/site.js"></script>
 
     <script>
-        document.getElementById('btnSubmit').addEventListener('click',displayMessage);
+        document.getElementById('btnSubmit').addEventListener('click', getValues);
     </script>
 </body>
 
